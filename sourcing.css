@@ -1,4 +1,282 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #111111;
+  line-height: 1.7;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+section {
+  padding: 6rem 6%;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+  min-height: 100vh;
+  padding: 2rem 6%;
+  background: #f8f9fb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-buttons a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-buttons a:hover {
+  opacity: 0.7;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+  align-items: center;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(0,0,0,0.06);
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 650px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 1rem 1.8rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background: #111;
+  color: white;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  border: 1px solid #ccc;
+  color: #111;
+}
+
+.secondary-btn:hover {
+  background: #111;
+  color: white;
+}
+
+.trust-badges {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.trust-badges span {
+  background: white;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.hero-image img {
+  border-radius: 24px;
+  height: 600px;
+  object-fit: cover;
+}
+
+
+/* SECTION HEADER */
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header span {
+  color: #666;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.section-header h2 {
+  font-size: 2.8rem;
+  margin-top: 1rem;
+}
+
+
+/* WHY SECTION */
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #666;
+}
+
+
+/* SERVICES SECTION */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.service-card h3 {
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: #666;
+}
+
+
+/* PROCESS SECTION */
+
+.timeline {
+  max-width: 900px;
+  margin: auto;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.timeline-number {
+  min-width: 70px;
+  height: 70px;
+  background: #111;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.timeline-content h3 {
+  margin-bottom: 0.8rem;
+}
+
+.timeline-content p {
+  color: #666;
+}
+
+
+/* QUALITY SECTION */
+
+.quality-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+  align-items: center;
+}
+
+.quality-text span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.quality-text h2 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.quality-text p {
   color: #666;
   margin-bottom: 1.5rem;
 }
@@ -16,6 +294,9 @@
   height: 500px;
   object-fit: cover;
 }
+
+
+/* CTA SECTION */
 
 .cta-section {
   background: #111;
@@ -44,6 +325,9 @@
   margin-bottom: 2rem;
 }
 
+
+/* RESPONSIVE */
+
 @media(max-width: 768px) {
 
   .hero-text h1 {
@@ -63,6 +347,10 @@
 
   .timeline-item {
     flex-direction: column;
+  }
+
+  .hero-image img {
+    height: 400px;
   }
 
 }
