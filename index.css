@@ -379,6 +379,11 @@ background-color: rgb(237, 241, 243);
   color: rgb(114, 114, 114);
 }
 
+.infographic{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
 .section5{
     display: flex;
     align-items: center;
@@ -391,7 +396,7 @@ background-color: rgb(237, 241, 243);
 @media screen and (max-width:992px){
     .section5{
         background-attachment: fixed;
-        height: auto;
+        height: 700px;
         padding: 50px 30px;
         
        
