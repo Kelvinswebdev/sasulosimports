@@ -253,3 +253,10 @@ width: 700px;
 
 
 /* the styling for the main content begins here */
+
+.hero{
+    background-image: url("pics/ship2.jpg");
+    height: 100vh;
+    background-size: cover;
+    backgroud-repeat: no-repeat;
+}
