@@ -255,8 +255,12 @@ width: 700px;
 /* the styling for the main content begins here */
 
 .hero{
-    background-image: url("pics/ship2.jpg");
-    height: 100vh;
+    background-image: url("pics/warehouse2.png");
+    height: 400px;
     background-size: cover;
-    backgroud-repeat: no-repeat;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
