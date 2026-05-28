@@ -50,6 +50,10 @@ body{
   background-position: center;
 }
 
+.service-card a{
+color: white;
+}
+
 .service-card:hover{
   transform: translateY(-10px);
 }
