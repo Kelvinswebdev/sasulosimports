@@ -52,6 +52,8 @@ body{
 
 .service-card a{
 color: white;
+text-decoration: none;
+
 }
 
 .service-card:hover{
