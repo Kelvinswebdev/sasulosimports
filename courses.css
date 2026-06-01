@@ -256,7 +256,7 @@ width: 700px;
 
 
 .hero{
-    background-image:linear-gradient(to top,rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(pics/shipping.jpg);
+    background-image:linear-gradient(to top,rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(pics/stdents.jpg);
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
