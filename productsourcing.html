@@ -108,18 +108,7 @@
       </div>
       </div>
      </li> -->
-    <li><a href="">Courses</a>
-      <div class="drop-container">
-        <div class="dropdowne">
-          <ul>
-            <li><a href="learn.html">One-on-One Coaching</a></li>
-            <li><a href="learn.html">Online Training</a></li>
-            <li><a href="learn.html">Business Mentorship</a></li>
-            <li><a href="learn.html">Student Success Stories</a></li>
-          </ul>
-      </div>
-      </div>
-    </li>
+    <li><a href="courses.html">Courses</a></li>
     <li><a href="">Services</a>
       <div class="drop-container">
         <div class="dropdowne">
@@ -268,7 +257,7 @@
         </div>
 
         <div class="aboutourcompany-contentright">
-            <img src="pics/loads.jpg" alt="">
+            <img src="pics/loads2.jpg" alt="">
         </div>
 
         
@@ -306,28 +295,11 @@
 
 
 
-<section class="cta">
 
-    <div class="container">
-
-        <h2>Ready To Source Smarter?</h2>
-
-        <p>
-            Let our team handle supplier research, negotiations and logistics
-            while you focus on growing your business.
-        </p>
-
-        <a href="#form" class="btn-primary">
-            Get Started Today
-        </a>
-
-    </div>
-
-</section>
 
 <section id="form" class="request-form">
 
-    <div class="container">
+    <div class="formcontainer">
 
         <div class="section-title">
             <span>Request Sourcing Assistance</span>
@@ -349,7 +321,7 @@
 
             <textarea rows="6" placeholder="Describe the product you need sourced..."></textarea>
 
-            <button type="submit">
+            <button class="submitbutton" type="submit">
                 Submit Request
             </button>
 
@@ -359,9 +331,121 @@
 
 </section>
 
+
+
+    <div class="stage5">
+    <div class="stage5-content">
+    <div class="stage5con">
+        <ul>
+        <h1>Sasulos Imports</h1>
+        <li><a href="#about">Our Vision & Aspirations</a></li>
+        <li><a href="#about">Our Core Values</a></li>
+        <li><a href="#about">Why Choose Us</a></li>
+
+    </ul>
+
+        <ul>
+        <h1>Our Services</h1>
+        <li><a href="sof.html">China Product Sourcing</a></li>
+        <li><a href="cyber.html">Sea & Air Freight Shipping</a></li>
+        <li><a href="data.html">Customs Clearance</a></li>
+        <li><a href="cloud.html">Quality Inspection</a></li>
+        <li><a href="digi.html">Warehousing & Consolidation</a></li>
+        </ul>
+
+        <ul>
+        <h1>Quick Links</h1>
+        <li><a href="#about">How It Works</a></li>
+        <li><a href="learn.html">Shipping Rates & Schedule</a></li>
+        <li><a href="cloud.html">Track Your Cargo</a></li>
+        <li><a href="news.html">FAQs & Support</a></li>
+
+        </ul>
+
+        <ul class="social">
+        <h1>Find Out More</h1>
+        <input type="text">
+        <button>signup</button>
+
+        <ul>
+            <li><a href=""><img src="pics/twitter.png" alt=""></a></li>
+        <li><a href=""><img src="pics/instagram.png" alt=""></a></li>
+        <li><a href=""><img src="pics/linked.png" alt=""></a></li>
+        <li><a href=""><img src="pics/face.png" alt=""></a></li>
+        <li><a href=""><img src="pics/youtube.png" alt=""></a></li>
+        </ul>
+        
+        </ul>
+
+
+
+        <ul class="street">
+        <h1>Street Address</h1>
+        <li>Gbawe-Accra.</li>
+        <li>10 Cola Street, Gbawe</li>
+        </ul>
+
+        <ul class="street">
+        <h1>Postal Address</h1>
+        <li>P.O. BOX 5100</li>
+        <li>Accra-North.</li>
+        </ul>
+
+        <ul class="street">
+        <h1>Phone & Email</h1>
+        <li> +233 0542381294</li>
+        <li>info@sasulosimports.com</a></li>
+        </ul>
+
+        <ul class="social">
+        <h1>Coming Soon</h1>
+        <li>+Sasulos Mobile App</li>
+        <li>+Automated Tracking Portal</li>
+        <li>+Online Duty Calculator</li>
+        </div>
+
+    </ul>
+    <img src="pics/appcode.png" width="300" style="padding: 30px;" alt="">
+    <div style="border-top:1px solid rgb(67, 67, 67);" >
+        <p style="text-align: center;padding: 20px;">Copyright ©2026 All rights reserved</p>
+    </div>
+    </div>
+    </div>
+
+<!-- External JS -->
+<script src="services.js"></script>
+<script src="js/work.js"></script>
+<script>
+  function myFunction() {
+  let x = document.getElementById("hide");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+  <script src="js/main.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzUBNk0K4g-J66nUp-T-Zd-J5rjOno6CmXysHOc2IwLXAOE2H-dSuG7GUVJOWmMsgdO/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="thank you for subscribing!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
-
 
 
 
