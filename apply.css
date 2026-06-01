@@ -255,399 +255,189 @@ width: 700px;
 /* the styling for the main content begins here */
 
 
-.hero{
-    background-image:linear-gradient(to top,rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(pics/shipping.jpg);
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.ruth{
+  height: 700px;
+  background-image:url("pics/shipping.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.herocontent {
-    max-width: 1100px;
-    margin: 0px auto;
-}
-
-.herocontent h1{
-    color: white;
-    font-size: 40px;
-    font-weight:lighter;
-}
-
-.herocontent p{
-    color: white;
-    font-size: 13px;
-    margin-top: 20px;
-}
-
-.herocontent button{
-    border: none;
-    background-color: rgb(5, 36, 190);
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.herocontent button a{
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-    display: block;
-    font-size: 13px;
-    
-}
-
-
-
-
-
-  /* #################################################################### */
-
-  .text-container {
-    display: flex;
-    padding-left: 50px;
-    justify-content: center;
-    animation: flyIn 1s ease-out forwards; /* Fly-in animation */
-   transform: translateX(-100%);
-    
-  }
-
-  
-  @media screen and (max-width:992px){
-    .text-container{
-      padding: 0px;
-    }
-  }
-
-
-  /* Fly-in animation keyframes */
-@keyframes flyIn {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  .text-container h1{
-    color: white;
-    font-weight: 100;
-    text-align: center;
-  }
-
-  .text-container p{
-    color: white;
-    font-size: 13px;
-    text-align: center;
-  }
-
-  .text-container button{
-    color: white;
-    background-color: rgb(0, 49, 128);
-    border-radius: 50px;
-    border: none;
-    margin-top: 20px;
-  }
-
-  .text-container button a{
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-
-  }
-
-  .welcome h1{
-    font-weight: 100;
-  }
-
-
-
-
-  .split1{
-    max-width: 1100px;
-    margin:100px auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    
-  }
-
-  @media screen and (max-width:992px){
-    .split1{
-      flex-direction: column;
-      padding: 20px 30px;
-      gap: 10px;
-      width: 100%;
-      margin-top: 30px;
-    }
-  }
-
-  .split1left ,.split1right {
- width: 50%;
-  }
-
-  @media screen and (max-width:992px){
-    .split1left ,.split1right {
-      width: 100%;
-       }
-  }
-
-  .split1left h1,.split1right h1{
-    font-weight: 100;
-  }
-
-  .split1right button{
-    color: white;
-    background-color: rgb(0, 30, 128);
-    border-radius: 10px;
-    border: none;
-    margin-top: 20px;
-  }
-
-  .split1right button a{
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-  }
-
-  /* .reveal-left, .reveal-right {
-    opacity: 0;
-    transition: opacity 0.6s ease-out;
-  } */
-  
-  
-  @media screen and (max-width:992px){
-    .logo{
-      width: 100%;
-    }
-  }
-
-
-  .video{
-    max-width: 1100px;
-    margin: 20px auto;
-    box-shadow: 0px 7px 30px -20px;
-    border-radius: 50px;
-
-  }
-
-  .headertexte{
-    text-align: left;
-    max-width: 1100px;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
-    line-height: 1.6;
-    padding-top: 10px;
-  }
-
-  @media screen and (max-width:992px){
-    .headertexte{
-      flex-direction: column;
-      padding: 20px 30px;
-      gap: 10px;
-      width: 100%;
-    }
-  }
-
-
-
-
-  .statistics {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    max-width: 1100px;
-    margin: auto;
-  }
-
-  @media screen and (max-width:992px){
-    .statistics{
-      flex-direction: column;
-      padding: 20px 30px;
-      gap: 10px;
-      width: 100%;
-    }
-  }
-
-  
-  .stat {
-    text-align: center;
-  }
-  
-  .stat h2 {
-    font-size:18px;
-    margin-bottom: 10px;
-    color: rgb(114, 114, 114);
-  }
-  
-  .count {
-    font-size: 60px;
-    font-weight: bold;
-    color: #00b135;
-    margin: 0;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s, transform 1s;
-  }
-  
-  .stat.visible .count {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .section3{
-    max-width: 1100px;
-    margin:100px auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 100px;
-  }
-
-  @media screen and (max-width:992px){
-    .section3{
-      flex-direction: column;
-      padding: 20px 30px;
-      gap: 10px;
-      width: 100%;
-    }
-  }
-
-  .section3left,.section3right{
-    width: 50%;
-    
-  }
-
-  @media screen and (max-width:992px){
-    .section3left,.section3right{
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-
-  .section3head{
-    text-align: left;
-    padding-bottom: 30px
-  }
-
-  .section3head h3{
-    font-weight: normal;
-    padding-top: 10px;
-  }
-
-
-
-  /* ################################################ */
-
-  .section7{
-    display: flex;
-    max-width: 1100px;
-    margin: auto;
-    justify-content: space-between;
-    gap: 30px;
-    padding-top: 50px;
-  }
-
-  @media screen and (max-width:992px){
-    .section7{
-      flex-direction: column;
-      padding: 20px 30px;
-      gap: 10px;
-      width: 100%;
-    }
-  }
-
-
-  .section7box1 {
-    width: 400px;
-    text-align: center;
-    animation: flyIn 1s ease-out forwards; /* Fly-in animation */
-    transform: translateX(-100%);
-    opacity: 0;
-}
-
-
-@media screen and (max-width:992px){
-  .section7box1{
-    width: 100%;
+@media(max-width:800px){
+  .ruth{
+    background-size: contain;
+    height:300px;
   }
 }
 
-
-.hidden {
-    opacity: 0;
-    transform: translateX(-100%);
+.heading{
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 100px 0px;
+  line-height: 1.6;
 }
 
-.revealed {
-    animation: flyIn 1s ease-out forwards;
-}
-
-@keyframes flyIn {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-
-  .section7box1 h1{
-    font-size: 20px;
-  }
-
-  .section7box1 div img{
-    width: 100%;
-  }
-
-  @media screen and (max-width:992px){
-    .section7box1 img{
-      width: 100%;
-    }
-  }
-
-
-  .section7box1 a{
-    color: rgb(94, 94, 94);
-    text-decoration: none;
-}
-
-.section7box1 a:hover{
-    color: green;  
-}
-
-
-.connect{
-  max-width: 1100px;
-  background-color: rgb(170, 255, 170);
-  margin: 30px  auto;
-  padding: 30px;
-}
-
-/* .footer{
-  background-color: #333;
-  padding: 30px;
-}
-
-.footer div{
-  max-width: 1100px;
-  margin: auto;
+.apply-btn{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.apply-btn button{
+  border: none;
+  background-color: #000292;
+  border-radius: 5px;
+}
+
+.apply-btn button a{
+  padding: 9px 15px;
+  text-decoration: none;
   color: white;
-  align-items: center;
-} */
- 
+  display: block;
+}
+
+.para1 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+@media (max-width:992px){
+  .heading{
+    padding: 20px;
+  }
+}
+.heading h1{
+    font-weight: lighter;
+    color: gray;
+    font-size: 40px;
+    text-align: center;
+}
+
+@media (max-width:800px){
+  .heading h1{
+    text-align: left;
+    font-size:30px;
+    margin-bottom: 10px;
+  }
+}
+
+.image{
+  margin-top: 30px;
+  display: flex;
+  gap:10px;
+  justify-content: center;
+}
+
+.tuition{
+  padding-top: 30px;
+}
+
+
+.tuition h1{
+  font-size: 30px;
+}
+
+#tablo{
+  width: 100%;
+  font-size: 20px;
+}
+
+ #row{
+  gap: 50px;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  background-color: #e5eff2;
+  padding: 15px 7px;
+}
+
+td{
+  padding: 20px 7px;
+  color: gray;
+  font-weight: lighter;
+}
+
+.pay{
+  margin-top: 40px;
+}
+
+.pay p{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.pay button{
+  border: none;
+  background-color: orangered;
+  color: white;
+  border-radius: 3px;
+
+}
+
+@media (max-width:800px){
+  .pay button{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .pay button a:hover{
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 20px;
+
+  }
+}
+
+.pay button a{ 
+  text-decoration: none;
+  color: white ;
+  padding: 10px 20px;
+  display: block;
+
+}
+
+.momo{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.momo div img{
+  width: 200px;
+}
+
+.momo div{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   .stage5{
