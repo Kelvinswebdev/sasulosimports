@@ -1,232 +1,303 @@
 *{
-  margin: 0;
-  padding: 0;
+  margin:0px;
+  padding:0px;
   box-sizing: border-box;
 }
 
-p{
-  color: gray;
-  font-size: 13px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*, ::before, ::after{
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.topnav {
-  background-color: #000000;
-  padding: 10px 30px;
-  display: flex;
-  justify-content: right;
-  align-items: center;
+body{
+    overflow-y: visible;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+
 }
 
-.topnav ul {
-  list-style: none;   
-  margin: 0;
+
+body{
+  font-family: 'Quicksand', sans-if;
+  overflow-y: visible;
+}
+span{
   padding: 0;
-  display: flex;
-}
-
-.topnav li {
-  margin: 0 15px;
-}
-
-.topnav a {
-  text-decoration: none;
-  color: #e2e2e2;
-
-}
-
-.social-icons {
-  display: flex; /* Ensure icons are in a row */
-}
-.social-icons a {
-  margin-left: 10px;
-  color: #00ff62;
-}
-
-/* the styling for the second navbar starts here */
-
-.secondnav {
-  background-color: rgb(231, 255, 231);
-  padding: 10px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-}
-
-.secondnav ul {
-  list-style: none;   
   margin: 0;
-  padding: 0;
-  display: flex;
+}
+.nav-container{
+  border-bottom: 1px solid #b6dde7;
+  background-color: white;
+
 }
 
-.secondnav li {
-  margin: 0 15px;
+@media Screen and (max-width:992px) {
+  .nav-container,.nav2container{
+  display: none; 
+  }
 }
 
-.secondnav a {
-  text-decoration: none;
-  color: rgb(56, 56, 56);
-  
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  z-index: 999;
-}
-
-
-
-.dropdown-content {
+#bnav{
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+@media Screen and (max-width:992px) {
+ #bnav{
+  display: block;
+ }
   
 }
 
-.dropdown-content a {
-  padding: 12px 16px;
+.topnav{
+  display: flex;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+
+.topchild{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.topchild img{
+  margin-right: 10px;
+}
+
+.topchild p{
+  margin: 0;
+  color: rgb(114, 114, 114);
+}
+.topchild span{
+  color: rgb(196, 196, 196);
+}
+
+/* the styling of the second nav satrts here */
+
+.nav2container{
+  font-size: 14px;
+  background-color: rgb(0, 49, 173);
+  padding: 0px;
+  margin: 0px;
+  /* background-color: white; */
+  /* position:sticky; */
+ 
+}
+.nav2{
+  display: flex;
+  max-width: 1100px;
+  margin: 0px auto;
+  align-items: center;
+  padding: 5px 0px;
+
+}
+
+.nav2list{
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav2list li {
+  position: relative;
+}
+
+.nav2list li a{
+  color:rgb(78, 78, 78);
   text-decoration: none;
-  display: block;
-  color: #333;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* HAMBURGER MENU */
-.hamburger {
-  display: none; /* Hide by default */
-  font-size: 30px;
-  cursor: pointer;
-}
-
-/* Sidebar Navigation for Mobile */
-.nav-menu {
-  position: fixed;
-  left: -250px; /* Initially hidden */
-  top: 0;
-  width: 250px;
-  height: 100%;
-  background: #000;
   color: white;
-  transition: left 0.3s ease-in-out;
-  /* display: flex; */
-  flex-direction: column;
-  padding-top: 60px;
+padding: 15px;
+}
+
+.drop-container{
+  display: none;
+  box-shadow: 0px 7px 30px -20px;
+}
+
+.dropdowne{
+  position: absolute;
+  background-color: white;
+  z-index: 999;
+  top: 35px;
+  list-style-type: none;
+  animation: drop .5s linear ;
+  border-radius: 5px;
+} 
+
+@keyframes drop{
+  0%{
+    margin-top: 30px;
+  }
+  25%{
+    margin-top: 15px;
+  }
+  50%{
+    margin-top: 0px;
+  }
+}
+
+.dropdowne ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dropdowne li{
+  padding: 0px;
+  width: 200px;
+}
+
+.dropdowne li a{
+  color: black;
+  padding: 10px 15px;
+  display: block;
+border-bottom: 1px solid #f1f1f1;
+
+}
+
+.dropdowne li a:hover{
+  background-color: #d2e1f5;
+}
+
+.enroll{
+  margin-left: auto;
+}
+
+.nav2list li:hover .drop-container{
+  display: block;
+}
+
+.about{
+  position: absolute;
+  background-color: white;
+
+  display: flex;
+  border-top: 2px solid white;
+  border-radius: 10px;
+  top: 33px;
+  animation: drop .5s linear ;
+  display: none;
+  box-shadow: 0px 7px 30px -20px;
+  padding: 20px;
   z-index: 999;
 }
 
-.nav-menu ul{
-  list-style-type: none;
-}
-
-.nav-menu a {
-  text-decoration: none;
-  color: white;
-  padding: 15px;
-  display: block;
-  font-size: 18px;
-}
-
-.nav-menu a:hover {
-  background: #333;
-}
-
-/* Show menu when active */
-.nav-menu.active {
-  left: 0;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .secondnav ul {
-      display: none; /* Hide menu items */
+@keyframes drop{
+  0%{
+    margin-top: 30px;
   }
-
-  .hamburger {
-      display: block; /* Show hamburger icon */
+  25%{
+    margin-top: 15px;
+  }
+  50%{
+    margin-top: 0px;
   }
 }
 
-.close-btn{
-  cursor: pointer;
-}
-
-
-.header {
-  
-  height: 100vh;
-  background-image:linear-gradient(to left,rgba(0, 59, 5, 0.5),rgba(0,0,0, 1)),url("pics/learn1.jpg");
+.about-con{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
+}
+
+.ab-left{
+  width: 300px;
+  padding: 20px;
 }
 
 
-@media screen and (max-width:992px){
-  .header{
-    flex-direction: column-reverse;
-    padding: 20px 30px;
-    gap: 10px;
-    width: 100%;
-    margin: 0px;
-    height: 100vh;
-    background-position: center;
-  }
+.ab-left h1{
+font-weight: lighter;
+font-size: 24px;
+}
+
+.pee{
+  color: #c0c0c0;
+  margin-top: 30px;
+}
+
+#learn-more {
+  color:orange ;
+}
+
+.ab-right{
+width: 700px;
+}
+
+.ab-right img{
+  width: 100%;
+  border-radius: 10px;
 }
 
 
-
-
-.text-container div{
-  text-align: center;
-}
-
-.text-container button{
-  color: white;
-  background-color: green;
-  border-radius: 50px;
-  border: none;
-  margin-top: 20px;
-}
-
-.text-container button a{
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: block;
-
-}
-
-.registerbtn{
-  color: white;
-  background-color: rgb(19, 139, 19);
-  border-radius: 7px;
-  border: none;
-  margin-top: 20px;
-}
-
-
-.registerbtn a{
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
+.nav2list li:hover .about{
   display: block;
 }
 
+.enroll button{
+  border: none;
+  padding: 10px 15px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
 
-  /* ################################################################## */
+.enroll button a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
 
 
 
+/* the styling for the main content begins here */
+
+
+.hero{
+    background-image:linear-gradient(to top,rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(pics/shipping.jpg);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.herocontent {
+    max-width: 1100px;
+    margin: 0px auto;
+}
+
+.herocontent h1{
+    color: white;
+    font-size: 30px;
+    font-weight:lighter;
+}
+
+.herocontent p{
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.herocontent button{
+    border: none;
+    background-color: rgb(5, 36, 190);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.herocontent button a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    font-size: 13px;
+    
+}
 
 
 
