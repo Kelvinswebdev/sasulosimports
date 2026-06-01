@@ -473,40 +473,9 @@ width: 700px;
 
 
 
-.industry-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
 
-.industry{
-    background:#0f172a;
-    color:white;
-    padding:30px;
-    text-align:center;
-    border-radius:12px;
-    transition:.3s;
-}
 
-.industry:hover{
-    transform:translateY(-6px);
-}
 
-.cta{
-    background:#d4af37;
-    text-align:center;
-    color:white;
-}
-
-.cta h2{
-    font-size:3rem;
-    margin-bottom:20px;
-}
-
-.request-form form{
-    max-width:800px;
-    margin:auto;
-}
 
 .form-grid{
     display:grid;
@@ -523,16 +492,7 @@ textarea{
     border-radius:10px;
 }
 
-button{
-    width:100%;
-    padding:18px;
-    background:#0f172a;
-    color:white;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-    font-size:1rem;
-}
+
 
 @media(max-width:768px){
 
