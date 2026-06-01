@@ -256,11 +256,121 @@ width: 700px;
 
 .hero{
     background-image:linear-gradient(to top,rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(pics/shipping.jpg);
-    height: 400px;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.herocontent {
+    max-width: 1100px;
+    margin: 0px auto;
+}
+
+.herocontent h1{
+    color: white;
+    font-size: 30px;
+    font-weight:lighter;
+}
+
+.herocontent p{
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.herocontent button{
+    border: none;
+    background-color: rgb(5, 36, 190);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.herocontent button a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    font-size: 13px;
+    
+}
+
+.section2{
+}
+
+.aboutourcompany{
+  display: flex;
+  max-width: 1100px;
+  margin: 0px auto;
+  gap:50px;
+  padding-top: 100px;
+  align-items: center;
+}
+
+
+@media screen and (max-width:992px){
+    .aboutourcompany{
+        
+        flex-direction: column-reverse;
+        padding: 30px;
+    }
+}
+
+.aboutourcompany-contentright{
+  width: 50%;
+}
+
+@media screen and (max-width:992px){
+    .aboutourcompany-contentright{
+        
+       width: 100%;
+    }
+}
+
+.aboutourcompany-contentright img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.aboutourcompany-contentleft{
+  width: 50%;
+}
+
+@media screen and (max-width:992px){
+    .aboutourcompany-contentleft{
+        
+       width: 100%;
+    }
+}
+
+.aboutourcompany-contentleft h1{
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutourcompany-contentleft h3{
+  color: rgb(0, 111, 197);
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.aboutourcompany-contentleft p{
+  font-size: 13px;
+  color: rgb(114, 114, 114);
+}
+
+.begin{
+  background-color: rgb(0, 111, 197);
+  border: none;
+}
+.begin a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  font-size: 13px;
+  border-radius: 5px;
 }
