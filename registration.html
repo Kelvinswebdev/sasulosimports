@@ -9,100 +9,55 @@
 </head>
 <body>
 
-    <section class="registration-section">
-        <div class="container">
 
-            <div class="header-content">
-                <div class="success-icon">
-                    <i class="fas fa-check-circle"></i>
-                </div>
+<form id="registrationForm">
 
-                <h1>Payment Successful!</h1>
+    <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+    </div>
 
-                <p>
-                    Thank you for your payment. Your spot has been reserved.
-                    Please complete the registration form below to finalize your enrollment.
-                </p>
-            </div>
+    <div class="input-group">
+        <label>Email Address</label>
+        <input type="email" id="email" name="email" required>
+    </div>
 
-            <div class="form-container">
+    <div class="input-group">
+        <label>Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+    </div>
 
-                <form id="submit-to-google-sheet">
+    <div class="input-group">
+        <label>Country</label>
+        <input type="text" id="country" name="country" required>
+    </div>
 
-                    <div class="form-grid">
+    <div class="input-group">
+        <label>Select Course</label>
+        <select id="course" name="course" required>
+            <option value="">Choose a Course</option>
+            <option value="Mini Importation Masterclass">Mini Importation Masterclass</option>
+            <option value="Alibaba Product Sourcing">Alibaba Product Sourcing</option>
+            <option value="China Importation Strategy">China Importation Strategy</option>
+            <option value="Shipping & Logistics Training">Shipping & Logistics Training</option>
+            <option value="Importation Business Bootcamp">Importation Business Bootcamp</option>
+        </select>
+    </div>
 
-                        <div class="form-group">
-                            <label>Full Name *</label>
-                            <input type="text" name="name" required>
-                        </div>
+    <div class="input-group">
+        <label>Why do you want to learn importation?</label>
+        <textarea
+            id="message"
+            name="message"
+            rows="4"
+        ></textarea>
+    </div>
 
-                        <div class="form-group">
-                            <label>Email Address *</label>
-                            <input type="email" name="email" required>
-                        </div>
+    <button type="submit" id="submitBtn">
+        Register Now
+    </button>
 
-                        <div class="form-group">
-                            <label>Phone Number *</label>
-                            <input type="tel" name="phone" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>WhatsApp Number *</label>
-                            <input type="tel" name="whatsapp" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>City / Region *</label>
-                            <input type="text" name="location" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Occupation *</label>
-                            <input type="text" name="occupation" required>
-                        </div>
-
-                        <div class="form-group full-width">
-                            <label>Course Purchased *</label>
-                            <select name="course" required>
-                                <option value="">Select Course</option>
-                                <option>Mini Importation Masterclass</option>
-                                <option>Business Coaching & Entrepreneurship</option>
-                                <option>Logistics & Supply Chain Management</option>
-                                <option>E-Commerce & Online Selling</option>
-                            </select>
-                        </div>
-
-                        
-
-                        <div class="form-group full-width">
-                            <label>Have you imported products before?</label>
-                            <select name="experience">
-                                <option>No</option>
-                                <option>Yes</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group full-width">
-                            <label>What do you hope to learn from this training?</label>
-                            <textarea name="expectations" rows="5"></textarea>
-                        </div>
-
-                    </div>
-
-                    <button type="submit" class="submit-btn">
-                        Complete Registration
-                    </button>
-
-                    <div id="successMessage" class="success-message">
-                        Registration completed successfully! Our team will contact you shortly.
-                    </div>
-
-                </form>
-
-            </div>
-
-        </div>
-    </section>
+</form>
 
     <script>
       const scriptURL =                       
