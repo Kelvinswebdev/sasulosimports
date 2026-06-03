@@ -296,7 +296,7 @@ width: 700px;
 .header {
   
     height: 400px;
-    background-image:linear-gradient(to left,rgba(0,0,0,0.7),rgba(14, 14, 14, 1)),url("pics/acra.jpg");
+    background-image:linear-gradient(to left,rgba(0,0,0,0.3),rgba(14, 14, 14, 0.3)),url("pics/stdents.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
