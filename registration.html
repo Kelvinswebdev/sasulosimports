@@ -408,7 +408,7 @@ Once your registration is submitted, our team will review your details and provi
 })
 </script> -->
 
-<script>
+<!-- <script>
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzFqtcRgXDh_6_Bze6R_prtzo5-3pgkiuJf4fzzK06DOAgql3mQzk5xOTf6HaoXj8bDsA/exec';
 
 const form = document.forms['courseRegistrations'];
@@ -429,6 +429,42 @@ form.addEventListener('submit', e => {
     })
     .catch(error => {
         console.error('Error!', error.message);
+    });
+});
+</script> -->
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzFqtcRgXDh_6_Bze6R_prtzo5-3pgkiuJf4fzzK06DOAgql3mQzk5xOTf6HaoXj8bDsA/exec';
+
+const form = document.forms['courseRegistrations'];
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    // Get the submit button
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    // Change button appearance
+    submitBtn.innerHTML = '⏳ Processing...';
+    submitBtn.disabled = true;
+
+    fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success!', data);
+
+        // Redirect to thank you page
+        window.location.href = "thank-you.html";
+    })
+    .catch(error => {
+        console.error('Error!', error.message);
+
+        // Restore button if submission fails
+        submitBtn.innerHTML = 'Complete Registration';
+        submitBtn.disabled = false;
     });
 });
 </script>
