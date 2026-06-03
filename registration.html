@@ -278,85 +278,85 @@ Once your registration is submitted, our team will review your details and provi
 
     <div class="abright">
         <div class="container">
-            <form id="registrationForm">
+            <form id="registrationForm" name="courseRegistrations">
 
-    <label for="name">Full Name:</label>
-    <input type="text" id="name" name="name" required>
-    <br><br>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
 
-    <label for="phone">Phone Number (WhatsApp):</label>
-    <input type="tel" id="phone" name="phone" required>
-    <br><br>
+                    <label for="phone">Phone Number (WhatsApp):</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <br><br>
 
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" required>
-    <br><br>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
 
-    <label for="country">Country of Residence:</label>
-    <input type="text" id="country" name="country" required>
-    <br><br>
+                    <label for="country">Country of Residence:</label>
+                    <input type="text" id="country" name="country" required>
+                    <br><br>
 
-    <label for="city">City:</label>
-    <input type="text" id="city" name="city">
-    <br><br>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                    <br><br>
 
-    <label for="course">Select Course:</label>
-    <select id="course" name="course" required>
-        <option value="">Choose a Course</option>
-        <option value="Importation Fundamentals">
-            Importation Fundamentals
-        </option>
-        <option value="China Sourcing & Procurement">
-            China Sourcing & Procurement
-        </option>
-        <option value="Import & Logistics Masterclass">
-            Import & Logistics Masterclass
-        </option>
-        <option value="Customs Clearance Training">
-            Customs Clearance Training
-        </option>
-    </select>
-    <br><br>
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="">Choose a Course</option>
+                        <option value="Importation Fundamentals">
+                            Importation Fundamentals
+                        </option>
+                        <option value="China Sourcing & Procurement">
+                            China Sourcing & Procurement
+                        </option>
+                        <option value="Import & Logistics Masterclass">
+                            Import & Logistics Masterclass
+                        </option>
+                        <option value="Customs Clearance Training">
+                            Customs Clearance Training
+                        </option>
+                    </select>
+                    <br><br>
 
-    <label for="experience">Business Status:</label>
-    <select id="experience" name="experience" required>
-        <option value="">Select Option</option>
-        <option value="Beginner">Beginner</option>
-        <option value="Planning to Start">Planning to Start</option>
-        <option value="Existing Business Owner">
-            Existing Business Owner
-        </option>
-    </select>
-    <br><br>
+                    <label for="experience">Business Status:</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Select Option</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Planning to Start">Planning to Start</option>
+                        <option value="Existing Business Owner">
+                            Existing Business Owner
+                        </option>
+                    </select>
+                    <br><br>
 
-    <label for="hearabout">How Did You Hear About Us?</label>
-    <select id="hearabout" name="hearabout">
-        <option value="">Select Option</option>
-        <option value="Facebook">Facebook</option>
-        <option value="Instagram">Instagram</option>
-        <option value="WhatsApp">WhatsApp</option>
-        <option value="Referral">Referral</option>
-        <option value="Website">Website</option>
-        <option value="TikTok">TikTok</option>
-    </select>
-    <br><br>
+                    <label for="hearabout">How Did You Hear About Us?</label>
+                    <select id="hearabout" name="hearabout">
+                        <option value="">Select Option</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="WhatsApp">WhatsApp</option>
+                        <option value="Referral">Referral</option>
+                        <option value="Website">Website</option>
+                        <option value="TikTok">TikTok</option>
+                    </select>
+                    <br><br>
 
-    <label for="goals">
-        What do you hope to achieve from this training?
-    </label>
-    <textarea id="goals" name="goals" rows="4"></textarea>
-    <br><br>
+                    <label for="goals">
+                        What do you hope to achieve from this training?
+                    </label>
+                    <textarea id="goals" name="goals" rows="4"></textarea>
+                    <br><br>
 
-    <label for="receipt">
-        Upload Payment Receipt (Optional)
-    </label>
-    <input type="file" id="receipt" name="receipt"
-           accept=".jpg,.jpeg,.png,.pdf">
-    <br><br>
+                    <label for="receipt">
+                        Upload Payment Receipt (Optional)
+                    </label>
+                    <input type="file" id="receipt" name="receipt"
+                        accept=".jpg,.jpeg,.png,.pdf">
+                    <br><br>
 
-    <button type="submit">
-        Complete Registration
-    </button>
+                    <button type="submit">
+                        Complete Registration
+                    </button>
 
 </form>
           
@@ -384,6 +384,8 @@ Once your registration is submitted, our team will review your details and provi
     </div>
 </div>
 
+
+
 <script>
     document.getElementById("registrationForm")
 .addEventListener("submit", function(e){
@@ -395,6 +397,8 @@ Once your registration is submitted, our team will review your details and provi
     window.location.href = "thankyou.html";
 
 });
+
+
 </script>
 
 <script>
@@ -436,6 +440,19 @@ reader.readAsDataURL(fileInput);
 
 
 
+<script>
+   
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbycAYFEqeelZC0Ct6IcJpibjU6x7Yp7RqbtNfKxWNlneRBhwVplbbQGg9qekAaB1WSEMQ/exec'
+	const form = document.forms['courseRegistrations']
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => console.log('Success!', response))
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
 
 
 
