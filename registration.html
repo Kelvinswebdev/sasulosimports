@@ -279,7 +279,9 @@ Once your registration is submitted, our team will review your details and provi
     <div class="abright">
         <div class="container">
             <form id="registrationForm" name="courseRegistrations">
-
+                <!-- Specify the sheet that you want to store the submissions in -->
+                <input type="hidden" name="sheet_name" value="courseRegistrations" />
+                <!-- If this hidden input is not present, it defaults to 'Sheet1' -->
                     <label for="name">Full Name:</label>
                     <input type="text" id="name" name="name" required>
                     <br><br>
@@ -387,62 +389,7 @@ Once your registration is submitted, our team will review your details and provi
 
 
 <script>
-    document.getElementById("registrationForm")
-.addEventListener("submit", function(e){
-
-    e.preventDefault();
-
-    // Your form processing code goes here
-
-    window.location.href = "thankyou.html";
-
-});
-
-
-</script>
-
-<script>
-    document.getElementById('uploadForm').addEventListener('submit', async function(event) {
-    event.preventDefault();
-
-    let fileInput = document.getElementById('file').files[0];
-    let reader = new FileReader();
-
-    reader.onload = async function() {
-    let formData = new FormData();
-    formData.append('name', document.getElementById('name').value);
-    formData.append('email', document.getElementById('email').value);
-    formData.append('title', document.getElementById('title').value);
-    formData.append('email', document.getElementById('email').value);
-    formData.append('category', document.getElementById('category').value);
-    formData.append('abstract', document.getElementById('abstract').value);
-    formData.append('file', reader.result.split(',')[1]); // Base64 encoded file
-    formData.append('filename', fileInput.name);
-    formData.append('mimetype', fileInput.type);
-    
-    try {
-        let response = await fetch("https://script.google.com/macros/s/AKfycbz-arAHhC-kg0YyrbS8ypNi0SM3YomQm695ysg2JyenQGl0VsRN3YVozttUAImL_Ku-0g/exec", {
-            method: 'POST',
-            body: formData
-        });
-        let result = await response.json();
-        alert(result.message);
-    } catch (error) {
-        console.error('Error:', error);
-        alert('An error occurred while submitting the form.');
-    }
-};
-
-reader.readAsDataURL(fileInput);
-});
-
-</script>
-
-
-
-<script>
-   
-	const scriptURL = 'https://script.google.com/macros/s/AKfycbycAYFEqeelZC0Ct6IcJpibjU6x7Yp7RqbtNfKxWNlneRBhwVplbbQGg9qekAaB1WSEMQ/exec'
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbz6Ih1WYNDg7YPYXzJ3cICcSdEI_Jsspqz5ny3Zf_HOapdfdKVhfwkvp8R3pOZ5YA4GGA/exec'
 	const form = document.forms['courseRegistrations']
 
 	form.addEventListener('submit', e => {
