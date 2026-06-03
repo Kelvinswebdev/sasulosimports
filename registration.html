@@ -280,7 +280,7 @@ Once your registration is submitted, our team will review your details and provi
         <div class="container">
             <form id="registrationForm" name="courseRegistrations">
                 <!-- Specify the sheet that you want to store the submissions in -->
-                <input type="hidden" name="sheet_name" value="courseRegistrations" />
+                <input type="hidden" name="courseRegistrations" value="courseRegistrations" />
                 <!-- If this hidden input is not present, it defaults to 'Sheet1' -->
                     <label for="name">Full Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -389,7 +389,7 @@ Once your registration is submitted, our team will review your details and provi
 
 
 <script>
-	const scriptURL = 'https://script.google.com/macros/s/AKfycbz6Ih1WYNDg7YPYXzJ3cICcSdEI_Jsspqz5ny3Zf_HOapdfdKVhfwkvp8R3pOZ5YA4GGA/exec'
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbzFqtcRgXDh_6_Bze6R_prtzo5-3pgkiuJf4fzzK06DOAgql3mQzk5xOTf6HaoXj8bDsA/exec'
 	const form = document.forms['courseRegistrations']
 
 	form.addEventListener('submit', e => {
