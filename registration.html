@@ -399,6 +399,13 @@ Once your registration is submitted, our team will review your details and provi
 			.then(response => console.log('Success!', response))
 			.catch(error => console.error('Error!', error.message))
 	})
+
+    .then(response => response.json())
+.then(response => {
+    if(response.result === "success"){
+        window.location.href = "thank-you.html";
+    }
+})
 </script>
 
 
