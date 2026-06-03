@@ -384,7 +384,18 @@ Once your registration is submitted, our team will review your details and provi
     </div>
 </div>
 
+<script>
+    document.getElementById("registrationForm")
+.addEventListener("submit", function(e){
 
+    e.preventDefault();
+
+    // Your form processing code goes here
+
+    window.location.href = "thankyou.html";
+
+});
+</script>
 
 <script>
     document.getElementById('uploadForm').addEventListener('submit', async function(event) {
