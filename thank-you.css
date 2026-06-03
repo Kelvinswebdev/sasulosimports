@@ -88,10 +88,12 @@ p{
     border-radius:50px;
     font-weight:600;
     transition:0.3s;
+    border-radius: 5px;
 }
 
 .btn-home:hover{
     transform:translateY(-4px);
+    background-color:#009eb3;
 }
 
 .particles{
