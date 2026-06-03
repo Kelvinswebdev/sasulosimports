@@ -388,7 +388,7 @@ Once your registration is submitted, our team will review your details and provi
 
 
 
-<script>
+<!-- <script>
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbzFqtcRgXDh_6_Bze6R_prtzo5-3pgkiuJf4fzzK06DOAgql3mQzk5xOTf6HaoXj8bDsA/exec'
 	const form = document.forms['courseRegistrations']
 
@@ -406,6 +406,31 @@ Once your registration is submitted, our team will review your details and provi
         window.location.href = "thank-you.html";
     }
 })
+</script> -->
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzFqtcRgXDh_6_Bze6R_prtzo5-3pgkiuJf4fzzK06DOAgql3mQzk5xOTf6HaoXj8bDsA/exec';
+
+const form = document.forms['courseRegistrations'];
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success!', data);
+
+        // Redirect to thank you page
+        window.location.href = "thank-you.html";
+    })
+    .catch(error => {
+        console.error('Error!', error.message);
+    });
+});
 </script>
 
 
