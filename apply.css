@@ -292,21 +292,60 @@ width: 700px;
 
 .heading{
   max-width: 1000px;
-  margin: 0px auto;
   padding: 100px 0px;
   line-height: 1.6;
-  font-size: 18px;
+  margin: 0px auto;
 }
 
-.heading h1{
-  font-size: 30px;
-  font-weight: lighter;
-  color: rgb(229, 68, 68);
+@media (max-width:992px){
+  .heading{
+    padding:50px 30px;
+  }
 }
+.heading h1{
+    font-weight: lighter;
+    color: gray;
+    font-size: 40px;
+    color: rgb(202, 30, 30);
+}
+
+@media (max-width:800px){
+  .heading h1{
+    text-align: left;
+    font-size:30px;
+    margin-bottom: 10px;
+  }
+}
+
+
+.para1 {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.whatyoulearn{
+
+  padding-top: 50px;
+}
+
+.courseinvestment{
+  margin-top: 50px;
+  padding-top: 30px;
+  background-color: #e5eff2;
+  padding: 30px;
+  border-radius: 10px;
+}
+.courseinvestment h1{
+  font-size: 30px;
+}
+
+.courseinvestment h3{
+  font-size: 20px;
+  color: rgb(37, 37, 37);
+}
+
 
 .apply-btn{
-  display: flex;
-  justify-content: center;
   margin-top: 30px;
 }
 
@@ -323,29 +362,8 @@ width: 700px;
   display: block;
 }
 
-.para1 {
-  font-size: 13px;
-}
 
-@media (max-width:992px){
-  .heading{
-    padding: 20px;
-  }
-}
-.heading h1{
-    font-weight: lighter;
-    color: gray;
-    font-size: 40px;
-    text-align: center;
-}
 
-@media (max-width:800px){
-  .heading h1{
-    text-align: left;
-    font-size:30px;
-    margin-bottom: 10px;
-  }
-}
 
 .image{
   margin-top: 30px;
