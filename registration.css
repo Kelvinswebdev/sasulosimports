@@ -351,15 +351,28 @@ width: 700px;
 
   .abright{
   background-color: #daffe8;
-  padding: 30px;
+  padding:50px 30px;
+}
+
+.abright h3{
+  font-size: 20px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 form{
-    padding: 30px 0px;
+    padding:50px  0px;
+}
+
+.formlogo{
+    display: flex;
+    justify-content: center;
 }
 label {
     color: rgb(114, 114, 114);
     font-size: 13px;
+    background:transparent
 }
 
 
