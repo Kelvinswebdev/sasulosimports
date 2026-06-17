@@ -270,8 +270,8 @@ width: 700px;
 @media screen and (max-width:992px){
   .abstract{
     flex-direction: column;
-    padding: 30px;
-    margin: 30px auto;
+    margin: 0px auto;
+    max-width: 100%;
   }
 }
 
@@ -290,7 +290,6 @@ width: 700px;
   .container {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
 }
 
 .header {
@@ -350,19 +349,31 @@ width: 700px;
   }
 
 
+  .abright{
+  background-color: #daffe8;
+  padding: 30px;
+}
+
 form{
     padding: 30px 0px;
 }
 label {
-    font-weight: bold;
-    padding-top: 15px;
+    color: rgb(114, 114, 114);
+    font-size: 13px;
 }
+
+
 input, textarea, select {
     width: 100%;
     padding: 8px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+::placeholder {
+    color: #999;
+    font-size: 12px;
 }
 button {
     background-color: #28a745;
